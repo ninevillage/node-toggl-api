@@ -1,0 +1,48 @@
+{
+  "name": "@ninevillage/toggl-api",
+  "version": "0.0.0",
+  "description": "toggl api library",
+  "main": "dist/index.js",
+  "keywords": [
+    "toggl",
+    "api",
+    "library"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/damncreative/node-toggl-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/damncreative/node-toggl-api/issues"
+  },
+  "homepage": "https://github.com/damncreative/node-toggl-api#readme",
+  "license": "MIT",
+  "contributors": [
+    {
+      "name": "naxmefy",
+      "url": "https://github.com/naxmefy"
+    }
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prebuild": "rimraf dist",
+    "lint": "eslint src/**/*.{ts,tsx}",
+    "lint:fix": "yarn lint --fix",
+    "test": "jest --watch",
+    "coverage": "jest --collectCoverageFrom=src/**/*.ts --coverage"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^25.1.2",
+    "@typescript-eslint/eslint-plugin": "^2.20.0",
+    "@typescript-eslint/parser": "^2.20.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "jest": "^25.1.0",
+    "prettier": "^1.19.1",
+    "rimraf": "^3.0.2",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5"
+  }
+}
