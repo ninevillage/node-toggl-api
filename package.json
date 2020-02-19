@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "toggl api library",
   "main": "dist/index.js",
+  "engines": {
+    "node": ">=10"
+  },
   "keywords": [
     "toggl",
     "api",
@@ -28,10 +31,13 @@
     "prebuild": "rimraf dist",
     "lint": "eslint src/**/*.{ts,tsx}",
     "lint:fix": "yarn lint --fix",
-    "test": "jest --watch",
+    "test": "jest",
+    "test:watch": "yarn test --watch",
     "coverage": "jest --collectCoverageFrom=src/**/*.ts --coverage"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@types/node": "^13.7.2"
+  },
   "devDependencies": {
     "@types/jest": "^25.1.2",
     "@typescript-eslint/eslint-plugin": "^2.20.0",
@@ -42,6 +48,7 @@
     "jest": "^25.1.0",
     "prettier": "^1.19.1",
     "rimraf": "^3.0.2",
+    "ts-jest": "^25.2.0",
     "ts-node": "^8.6.2",
     "typescript": "^3.7.5"
   }
