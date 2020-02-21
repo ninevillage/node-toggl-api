@@ -31,12 +31,12 @@ const toggl = Toggl.withAPIToken('<api_token>')
 ### Example SignUp
 
 ```typescript
-import { Timezone } from '@ninevillage/toggl-api'
+import { UTC } from '@ninevillage/timezones'
 
 const user = await toggl.signup({
   email: 'user@toggl.com',
   password: 'StrongPassword',
-  timezone: Timezone.UTC,
+  timezone: UTC.zone,
   created_with: '@ninevillage/toggl-api', // can be anything, but required
 })
 ```
