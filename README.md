@@ -3,8 +3,8 @@
 Most of us @ninevillage using toggl to track our times.
 So we created a Node.js module for their api (>^.^)>
 
-![Tests](https://github.com/naxmefy/node-toggl-api/workflows/Tests/badge.svg)
-![Release](https://github.com/naxmefy/node-toggl-api/workflows/Release/badge.svg)
+![Tests](https://github.com/ninevillage/node-toggl-api/workflows/Tests/badge.svg)
+![Release](https://github.com/ninevillage/node-toggl-api/workflows/Release/badge.svg)
 
 ## installation
 
