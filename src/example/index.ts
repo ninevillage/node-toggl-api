@@ -7,8 +7,8 @@ if (!TOGGL_USERNAME || !TOGGL_PASSWORD) {
 }
 
 // const toggl = Toggl.withAPIToken('a0760864b251e3f9512e8ff02381c308')
-const toggl = Toggl.withEmailAndPassword(TOGGL_USERNAME, TOGGL_PASSWORD)
-toggl
-  .me()
-  .then(user => console.log(user))
-  .catch(console.error)
+;(async (): Promise<void> => {
+  const toggl = Toggl.withEmailAndPassword(TOGGL_USERNAME, TOGGL_PASSWORD)
+  const user = await toggl.me()
+  console.log(user)
+})()
