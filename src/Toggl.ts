@@ -23,23 +23,6 @@ export class Toggl {
           options.auth = options.username + ':' + options.password
           return next(options)
         },
-
-        async <T extends GotReturn>(
-          options: NormalizedOptions,
-          next: (options: NormalizedOptions) => T,
-        ): Promise<T> => {
-          const start = Date.now()
-          console.log(options, 'start')
-          try {
-            const t = await next(options)
-            console.log(t, Date.now() - start, 'ms')
-            return t
-          } catch (e) {
-            console.error(e, Date.now() - start, 'ms')
-            console.log(options, 'end')
-            throw e
-          }
-        },
       ],
     })
 
