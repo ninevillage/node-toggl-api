@@ -1,7 +1,7 @@
 {
   "name": "@ninevillage/toggl-api",
   "version": "0.0.0",
-  "description": "toggl api library",
+  "description": "typescript toggl api client",
   "main": "dist/index.js",
   "engines": {
     "node": ">=10"
