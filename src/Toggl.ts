@@ -1,7 +1,5 @@
-import { Configuration, ProfileUpdate, SignUpRequest, Options as TogglOptions, User } from './interfaces'
-import got, { Got, GotReturn, NormalizedOptions, Options } from 'got'
-
-import { base64 } from './util'
+import { Configuration, ProfileUpdate, SignUpRequest, TogglOptions, User } from './interfaces'
+import got, { Got, GotReturn, NormalizedOptions } from 'got'
 
 export const API_URL = 'https://www.toggl.com/api'
 export const REPORTS_URL = 'https://www.toggl.com/api'

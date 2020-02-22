@@ -1,6 +1,6 @@
 import { Configuration } from './Configuration'
 
-export interface Options {
+export interface TogglOptions {
   apiToken?: string
   email?: string
   password?: string
