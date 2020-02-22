@@ -13,12 +13,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/damncreative/node-toggl-api.git"
+    "url": "git+https://github.com/ninevillage/node-toggl-api.git"
   },
   "bugs": {
-    "url": "https://github.com/damncreative/node-toggl-api/issues"
+    "url": "https://github.com/ninevillage/node-toggl-api/issues"
   },
-  "homepage": "https://github.com/damncreative/node-toggl-api#readme",
+  "homepage": "https://github.com/ninevillage/node-toggl-api#readme",
   "license": "MIT",
   "contributors": [
     {
