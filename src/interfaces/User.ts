@@ -1,9 +1,12 @@
+import { DateFormat, DayOfWeek, TimeFormat } from './ProfileUpdate'
+
 import { Client } from './Client'
 import { Invitation } from './Invitation'
 import { NewBlogPost } from './NewBlogPost'
 import { Project } from './Project'
 import { Tag } from './Tag'
 import { TimeEntry } from './TimeEntry'
+import { Timezone } from '@ninevillage/timezones'
 import { Workspace } from './Workspace'
 
 export interface User {
@@ -14,10 +17,10 @@ export interface User {
   fullname: string
   jquery_timeofday_format: string
   jquery_date_format: string
-  timeofday_format: string
-  date_format: string
+  timeofday_format: TimeFormat | string
+  date_format: DateFormat | string
   store_start_and_stop_time: boolean
-  beginning_of_week: number
+  beginning_of_week: DayOfWeek | number
   language: string
   image_url: string
   sidebar_piechart: boolean

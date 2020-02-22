@@ -27,6 +27,7 @@
     }
   ],
   "scripts": {
+    "example": "ts-node -r dotenv/config src/example/index.ts",
     "build": "tsc",
     "prebuild": "rimraf dist",
     "lint": "eslint src/**/*.{ts,tsx}",
@@ -36,12 +37,15 @@
     "coverage": "jest --collectCoverageFrom=src/**/*.ts --coverage"
   },
   "dependencies": {
-    "@types/node": "^13.7.2"
+    "@types/node": "^13.7.2",
+    "got": "^10.6.0"
   },
   "devDependencies": {
+    "@ninevillage/timezones": "^1.1.0",
     "@types/jest": "^25.1.2",
     "@typescript-eslint/eslint-plugin": "^2.20.0",
     "@typescript-eslint/parser": "^2.20.0",
+    "dotenv": "^8.2.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-prettier": "^3.1.2",

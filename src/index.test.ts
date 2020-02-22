@@ -1,5 +1,5 @@
-describe('testFunction', () => {
-  it('should be truthy', () => {
+describe('Toggl', () => {
+  it('should be truthy', async () => {
     expect(true).toBeTruthy()
   })
 })
