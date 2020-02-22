@@ -1,5 +1,3 @@
-import { Timezone } from '@ninevillage/timezones'
-
 export interface ProfileUpdate {
   fullname: string
 

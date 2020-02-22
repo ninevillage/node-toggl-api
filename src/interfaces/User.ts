@@ -6,7 +6,6 @@ import { NewBlogPost } from './NewBlogPost'
 import { Project } from './Project'
 import { Tag } from './Tag'
 import { TimeEntry } from './TimeEntry'
-import { Timezone } from '@ninevillage/timezones'
 import { Workspace } from './Workspace'
 
 export interface User {
